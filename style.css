@@ -128,11 +128,91 @@ nav .list ul{
   margin-bottom: 32px;
 }
 
+.features{
+  gap: 145px;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.feature-container{
+  max-width: 586px;
+}
+.feature-container h2{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  padding-left: 22px;
+  border-left: 5px solid #FF900E;
+}
+.feature-container > p{
+  margin-bottom: 30px;
+}
+.card{
+  margin-top: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px 35px;
+}
+.card h4{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.feature-image .bt1{
+  font-size: 65px;
+  font-weight: 700;
+}
+.feature-image .bt2{
+  font-size: 25px;
+  font-weight: 500;
+}
+.feature-image button{
+  padding: 45px 42px;
+  margin-top: -120px;
+  margin-left: -90px;
+  margin-bottom: 0;
+}
+.facts{
+  margin-bottom: 130px;
+}
+.facts h2{
+  font-size: 45px;
+  font-weight: 700;
+}
+.facts > p{
+  max-width: 542px;
+  margin-top: 24px;
+}
+
+.fact-container{
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.fact-card{
+  padding: 48px 36px;
+  border: 1px solid #FF900E;
+  border-radius: 10px;
+  text-align: center;
+}
+.fact-card .count{
+  font-size: 45px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+.fact-card .count-desc{
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
 
 
 
+
+
+
+.hide{
+  display: none;
+}
 
 
 /* Responsive */
@@ -142,7 +222,7 @@ nav .list ul{
     padding-top: 0;
   }
   nav,
-  .quick-list{
+  .quick-list, .features{
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -154,10 +234,33 @@ nav .list ul{
   }
   .quick-list-img{
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
-  .quick-list-img img{
+  .quick-list-img, .feature-image img{
     width: 100%;
   }
+  .quick-list-img img{
+    margin: 0 auto;
+  }
+  .feature-image button{
+    margin: 0;
+    padding: 20px 28px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .feature-image .bt1{
+    font-size: 26px;
+  }
+  .feature-image .bt2{
+    font-size: 20px;
+  }
+  .features{
+    gap: 50px;
+  }
+  .feature-container h2{
+    margin-top: 60px;
+  }
+  
 }
 
 
@@ -167,16 +270,34 @@ nav .list ul{
     padding-top: 0;
   }
   nav,
-  .quick-list{
+  .quick-list,
+  .features{
     flex-direction: column;
     margin-bottom: 20px;
-
   }
   .banner-img{
     padding-bottom: 30px;
   }
-  .quick-list-img img{
+  .quick-list-img img, .feature-image img{
     width: 100%;
+  }
+  .feature-image button{
+    margin: 0;
+    padding: 20px 38px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .feature-image .bt1{
+    font-size: 30px;
+  }
+  .feature-image .bt2{
+    font-size: 24px;
+  }
+  .features{
+    gap: 50px;
+  }
+  .feature-container{
+  max-width: 834px;
   }
 }
 
@@ -189,6 +310,37 @@ nav .list ul{
   }
   .quick-list-img{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .features{
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 50px;
+  }
+  .feature-container{
+  max-width: 1137px;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card{
+    margin-top: 0;
+  }
+  .feature-image button{
+    margin: 0;
+    padding: 20px 38px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .feature-image .bt1{
+    font-size: 30px;
+  }
+  .feature-image .bt2{
+    font-size: 24px;
+  }
+  .feature-image img{
+    width: 100%;
   }
 }
 
@@ -205,6 +357,27 @@ nav .list ul{
   .quick-list-text{
   max-width: 450px;
   }
+  .features{
+    gap: 50px;
+  }
+  .feature-container{
+    max-width: 50%;
+  }
+  .feature-image img{
+    width: 100%;
+  }
+  .feature-image button{
+    margin-top: -50px;
+    margin-left: -30px;
+    padding: 20px 38px;
+
+  }
+  .feature-image .bt1{
+    font-size: 30px;
+  }
+  .feature-image .bt2{
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -213,5 +386,11 @@ nav .list ul{
   }
   .quick-list{
     gap: 80px;
+  }
+  .feature-container{
+    max-width: 50%;
+  }
+  .feature-image img{
+    width: 100%;
   }
 }
